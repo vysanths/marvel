@@ -1,0 +1,34 @@
+<ion-menu side="start" disabled='false' content-id="sidenav">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Title
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content id="sidenav">
+    <ion-list>
+      <ion-menu-toggle autoHide='fasle'>
+        <ion-button fill="clear">
+        <ion-item type='button' lines="none" [routerLink]="'/dashboard'">
+          <ion-icon name="business" slot="start"></ion-icon>
+          <ion-label>item 1</ion-label>
+        </ion-item>
+      </ion-button>
+      </ion-menu-toggle>
+      <ion-menu-toggle autoHide='fasle'>
+        <ion-item button lines="none" routerLink="/dashboard">
+          <ion-icon name="checkbox-outline" slot="start"></ion-icon>
+          <ion-label>item 2</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle autoHide='fasle'>
+        <ion-item button lines="none">
+          <ion-icon (click)="goToHome()" name="exit" slot="start"></ion-icon>
+          <ion-label>item 3</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+  </ion-content>
+</ion-menu>
