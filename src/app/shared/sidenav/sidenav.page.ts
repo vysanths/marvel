@@ -14,6 +14,7 @@ export class SidenavPage implements OnInit {
   ngOnInit() {
   }
   goToHome() {
-    this.router.navigate(['/dashboard'])
+    alert();
+    // this.router.navigate(['/dashboard'])
   }
 }
